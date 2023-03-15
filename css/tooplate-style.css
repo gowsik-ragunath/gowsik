@@ -113,6 +113,7 @@ b, strong {
   margin-top: 5px;
   min-width: 260px;
   position: relative;
+  white-space: nowrap;
 }
 
 .animated-item {
@@ -124,13 +125,21 @@ b, strong {
   line-height: inherit;
   display: block;
   opacity: 0;
-  overflow: hidden;
   position: absolute;
   top: 0;
   right: 0;
   left: 0;
-  animation: BottomTotop 6s linear infinite 0s;
+  animation: BottomTotop 4s linear infinite 0s;
 }
+
+.dark-mode .animated-item .animated-article {
+  color: #ffffff;
+}
+
+.animated-item .animated-article {
+  color: #000000;
+}
+
 .animated-item:nth-child(2n+2) {
   animation-delay: 2s;
 }
@@ -174,9 +183,9 @@ b, strong {
   will-change: transform;
   transition: transform 200ms linear;
 }
-.navbar[class*="-unpinned"] {
+/* .navbar[class*="-unpinned"] {
   transform: translate(0, -150%);
-}
+} */
 .navbar[class*="-pinned"] {
   transform: translate(0, 0);
 }
@@ -363,7 +372,16 @@ b, strong {
   font-weight: bold;
   display: inline-block;
   vertical-align: middle;
-  margin-left: 15px;
+  margin-left: 4px;
+}
+
+.timeline ul {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.timeline ul li {
+  list-style: circle;
 }
 
 .owl-carousel .owl-nav span {
@@ -402,6 +420,7 @@ b, strong {
 }
 .owl-theme .owl-dots .owl-dot {
   outline: none;
+  margin-top: 1.25rem;
 }
 .owl-theme .owl-dots .owl-dot span {
   width: 8px;
@@ -467,6 +486,11 @@ b, strong {
 
 .dark-mode p {
   color: #e3e1da;
+}
+
+
+.dark-mode .timeline ul li {
+  color: #ffffff;
 }
 
 .owl-carousel .owl-item img {
