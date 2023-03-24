@@ -595,6 +595,10 @@ b, strong {
 		padding-bottom: 20px;
 	}
 
+	.dark-mode .navbar-collapse {
+		background: #0f0f0f !important;
+	}
+
 	.navbar-expand-sm .navbar-nav .nav-link {
 		padding: 3px 20px;
 	}
